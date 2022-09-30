@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 import Input from './components/Input';
@@ -52,7 +52,7 @@ function App() {
       <div className="mt-3">
         <List toDo={toDo} deleted={deleted} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className={!icon ? "hidden" : ""} />
       </div>
-      <div className='mt-2 mx-auto'>{toDo.length} {toDo.length===1 ? "to-do" : "to-dos"} left</div>
+      <div className='mt-2 mx-auto'>{toDo.length} {toDo.length === 1 ? "to-do" : "to-dos"} left</div>
     </div>
   );
 }

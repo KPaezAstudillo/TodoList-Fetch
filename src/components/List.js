@@ -8,8 +8,8 @@ export default function List({ toDo, deleted, onMouseOver, onMouseOut, className
       <ul className='list-group'>
         {
           toDo.map((todo, index) => {
-          return(<li key={index} className="list-group-item" id={todo.id} onMouseOver={onMouseOver} onMouseOut={onMouseOut}> {todo} <FaTrash className={className} onClick={() => deleted({ index })} /></li>)
-        })}
+            return (<li key={index} className="list-group-item" id={todo.id} onMouseOver={onMouseOver} onMouseOut={onMouseOut}> {todo} <FaTrash className={className} onClick={() => deleted({ index })} /></li>)
+          })}
 
       </ul>
     </>
